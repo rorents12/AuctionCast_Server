@@ -30,5 +30,11 @@ public class ServerMessageParser {
         return message.getString("roomCode");
     }
 
+    public JSONObject getMessageAuctionInfo(String msg){
+        this.message = new JSONObject(msg);
+
+        return message.getJSONObject("auctionInfo");
+    }
+
 
 }
